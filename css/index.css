@@ -1,4 +1,7 @@
 .player-list {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   border: grey solid 1px;
   padding: 1rem;
@@ -8,7 +11,7 @@
   margin: 1rem 2rem;
   box-shadow: 3px 4px rgb(56, 55, 73);
   background-color: rgb(238, 144, 233);
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVqcj7pwkfGAPqdG-K0RBRvIo_iiOmD2xIOw&usqp=CAU");
+  background-image: url("https://cdn.wallpapersafari.com/87/46/oHmIgd.png");
 }
 h1 {
   font-style: oblique;
@@ -36,7 +39,8 @@ body {
   text-align: center;
 }
 .player-container {
-  position: relative;
+  display: block;
+  text-align: center;
   width: 300px;
   height: 250px;
   border-radius: 20px;
@@ -74,7 +78,7 @@ h2 {
 }
 
 .player-input {
-  align-items: center;
+  display: center;
 }
 
 h4 {
@@ -83,5 +87,12 @@ h4 {
 }
 
 body {
-  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/fifa-fut-20-hub-fifa-texture-section-background-desktop-tablet-01-ps4-en-03aug19?$native$");
+  background-image: url("https://pbs.twimg.com/media/ClJdMZ2UoAQIjCR.jpg");
+}
+
+#heading {
+  color: hotpink;
+}
+#list {
+  color: chocolate;
 }
