@@ -1,0 +1,87 @@
+.player-list {
+  text-align: left;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px rgb(56, 55, 73);
+  background-color: rgb(238, 144, 233);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVqcj7pwkfGAPqdG-K0RBRvIo_iiOmD2xIOw&usqp=CAU");
+}
+h1 {
+  font-style: oblique;
+}
+.player-image {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+#heading {
+  text-align: center;
+}
+
+body {
+  background-color: rgba(100, 159, 237, 0.945);
+}
+/* 
+#banner {
+  max-width: 100%;
+  height: 4in;
+  margin-right: auto;
+} */
+#list {
+  text-align: center;
+}
+.player-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: plum;
+  box-shadow: 14px 14px 20px #d1cbcb, -14px -14px 20px #d1cbcb;
+}
+
+h3,
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+h2 {
+  color: hotpink;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/000/622/040/small_2x/soccer_silhouettes_pack.jpg");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.submit {
+  color: hotpink;
+  font-style: italic;
+}
+
+.player-input {
+  align-items: center;
+}
+
+h4 {
+  text-align: center;
+  color: rgb(0, 108, 209);
+}
+
+body {
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/fifa-fut-20-hub-fifa-texture-section-background-desktop-tablet-01-ps4-en-03aug19?$native$");
+}
