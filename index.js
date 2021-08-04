@@ -14,7 +14,11 @@ h1.appendChild(topDisplay)
 // Submit Handler (Form) ci
 
 
+<<<<<<< HEAD
 document.querySelector('.player-input').addEventListener('submit', handlesubmit) 
+=======
+//new comment 
+>>>>>>> refs/remotes/origin/main
 
 function handlesubmit(e){
 e.preventDefault()
