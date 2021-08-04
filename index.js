@@ -14,7 +14,7 @@ h1.appendChild(topDisplay)
 // Submit Handler (Form) ci
 
 
-document.querySelector('.player-input').addEventListener('submit', handlesubmit)
+document.querySelector('.player-input').addEventListener('submit', handlesubmit) 
 
 function handlesubmit(e){
 e.preventDefault()
@@ -43,13 +43,22 @@ function addNewPlayer(playerObj){
     
     
 }
-
+document.querySelector('.player-input').reset()
 function getPlayers() {
-    fetch('http://localhost:3000/players')
+    fetch(' http://localhost:3000/players')
     .then(res => res.json())
     .then(players => {
+        console.log(players)
         players.forEach(playerCard)
 })}
+
+// function getPlayers() {
+//     fetch('https://www.easports.com/fifa/ultimate-team/api/fut/item')
+//     .then(res => res.json())
+//     .then(players => {
+//         console.log(players)
+//         players.items.forEach(playerCard)
+// })}
 
 const playerList = document.querySelector('#player-list')
 
