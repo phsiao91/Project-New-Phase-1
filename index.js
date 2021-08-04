@@ -13,8 +13,8 @@ h1.appendChild(topDisplay)
 
 // Submit Handler (Form) ci
 
-document.querySelector('.player-input').addEventListener('submit', handlesubmit)
 
+document.querySelector('.player-input').addEventListener('submit', handlesubmit)
 
 function handlesubmit(e){
 e.preventDefault()

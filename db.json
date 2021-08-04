@@ -3,32 +3,20 @@
     {
       "id": 1,
       "name": "Luka Modric",
-      "image": "https://static.wikia.nocookie.net/fifa/images/3/37/Luka_Modri%C4%87.jpg/revision/latest?cb=20180726185804",
-      "goals": 6
+      "image": "http://3.bp.blogspot.com/-eOcllUbzhPk/TedLJY_IQtI/AAAAAAAACYE/jZEzHsvwBkc/s1600/Manchester+United+transfer+bid+luka+modric.jpg",
+      "goals": 8
     },
     {
       "id": 2,
-      "name": "2nd Luka Modric",
-      "image": "https://static.wikia.nocookie.net/fifa/images/3/37/Luka_Modri%C4%87.jpg/revision/latest?cb=20180726185804",
-      "goals": 7
+      "name": "Toni Kroos",
+      "image": "https://i2-prod.football.london/incoming/article20542885.ece/ALTERNATES/s1200c/0_Kroos.jpg",
+      "goals": 3
     },
     {
-      "id": 3,
-      "name": "3rd Luka Modric",
-      "image": "https://static.wikia.nocookie.net/fifa/images/3/37/Luka_Modri%C4%87.jpg/revision/latest?cb=20180726185804",
-      "goals": 7
-    },
-    {
-      "name": "sid",
-      "image": "https://static.wikia.nocookie.net/pixar/images/9/94/Sid-Phillips.png/revision/latest/scale-to-width-down/250?cb=20200101194615",
-      "goals": 1,
-      "id": 4
-    },
-    {
-      "name": "sid",
-      "image": "https://static.wikia.nocookie.net/pixar/images/9/94/Sid-Phillips.png/revision/latest/scale-to-width-down/250?cb=20200101194615",
-      "goals": 3,
-      "id": 5
+      "id": 2,
+      "name": "Bruno Fernandez",
+      "image": "https://cdn-wp.thesportsrush.com/2020/08/0_Bruno-Fernandes.jpg",
+      "goals": 5
     }
   ]
 }
