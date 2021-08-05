@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Luka Modric",
       "image": "http://3.bp.blogspot.com/-eOcllUbzhPk/TedLJY_IQtI/AAAAAAAACYE/jZEzHsvwBkc/s1600/Manchester+United+transfer+bid+luka+modric.jpg",
-      "goals": 14
+      "goals": 7
     },
     {
       "id": 2,
       "name": "Toni Kroos",
       "image": "https://i2-prod.football.london/incoming/article20542885.ece/ALTERNATES/s1200c/0_Kroos.jpg",
-      "goals": 8
+      "goals": 6
     },
     {
       "id": 3,
@@ -19,28 +19,34 @@
       "goals": 5
     },
     {
-      "name": "sid",
-      "image": "https://static.wikia.nocookie.net/pixar/images/9/94/Sid-Phillips.png/revision/latest/scale-to-width-down/250?cb=20200101194615",
-      "goals": 1,
+      "name": "Marcus Rashford",
+      "image": "https://www.irishtimes.com/polopoly_fs/1.4243834.1588439586!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
+      "goals": 11,
       "id": 4
     },
     {
-      "name": "Marcus Rashford",
-      "image": "https://www.irishtimes.com/polopoly_fs/1.4243834.1588439586!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
-      "goals": 0,
-      "id": 5
+      "id": 5,
+      "name": "Zlatan Ibrahimovich",
+      "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article20657964.ece/ALTERNATES/s1200c/0_GettyImages-642912838.jpg",
+      "goals": 12
     },
     {
-      "name": "Marcus Rashford",
-      "image": "https://www.irishtimes.com/polopoly_fs/1.4243834.1588439586!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
-      "goals": 0,
-      "id": 6
+      "id": 6,
+      "name": "Christiano Ronaldo",
+      "image": "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgxODI4NTcyNzM2OTIyNzU1/cristiano-ronaldo-international-goal-record.jpg",
+      "goals": 18
     },
     {
-      "name": "",
-      "image": "",
-      "goals": 0,
-      "id": 7
+      "id": 7,
+      "name": "Sergio Ramos",
+      "image": "https://s.hs-data.com/bilder/spieler/gross/19198.jpg",
+      "goals": 1
+    },
+    {
+      "id": 8,
+      "name": "Marcelo",
+      "image": "https://bolavip.com/__export/1621447533376/sites/bolavip/img/2021/05/19/marcelo.jpg_1159711837.jpg",
+      "goals": 2
     }
   ]
 }

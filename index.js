@@ -4,12 +4,12 @@ document.addEventListener('click', function(e) {
     console.log(e.target)
 })
 const h1 = document.querySelector('h1')
-h1.textContent = '⭐️ My fantasy team ⭐️'
+h1.textContent = 'Create Your Team'
 
-const topDisplay = document.createElement('img')
-topDisplay.id = 'banner'
-topDisplay.src = 'https://gameonfw.com/wp-content/uploads/2016/04/game-on-soccer-banner.jpg'
-h1.appendChild(topDisplay)
+// const topDisplay = document.createElement('img')
+// topDisplay.id = 'banner'
+// topDisplay.src = 'https://gameonfw.com/wp-content/uploads/2016/04/game-on-soccer-banner.jpg'
+// h1.append(topDisplay)
 
 // Submit Handler (Form) ci
 
@@ -81,6 +81,8 @@ function playerCard(players) {
 
     const numberOfGoals = document.createElement('p')
     numberOfGoals.textContent = `${players.goals} goals scored`
+    numberOfGoals.style.color = 'crimson'
+    numberOfGoals.style.fontSize = 'x-large'
     // playerName.textContent = `${players.goals} goals scored` original line of code 
     //div.appendChild(numberOfGoals)
 
@@ -88,6 +90,7 @@ function playerCard(players) {
     btn.className = 'season-stats'
     btn.textContent = 'add goal'
     btn.id = 'player-select'
+    btn.style.fontSize = 'large'
     btn.addEventListener('click', ()=>increaseGoals(players))
     //div.appendChild(btn)
 

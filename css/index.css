@@ -14,7 +14,8 @@
   background-image: url("https://cdn.wallpapersafari.com/87/46/oHmIgd.png");
 }
 h1 {
-  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  background-image: "https://gameonfw.com/wp-content/uploads/2016/04/game-on-soccer-banner.jpg";
 }
 .player-image {
   justify-self: center;
@@ -114,4 +115,17 @@ body {
 
 .score-heading {
   font-size: small;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  color: crimson;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
