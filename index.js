@@ -28,6 +28,15 @@ addNewPlayer(playerObj)
 playerCard(playerObj)
 }
 
+// mouseover 
+document.querySelector('.submit').addEventListener('mouseover', (e) => {
+e.target.style.color = "blue"
+
+})
+
+document.querySelector('.submit').addEventListener('mouseout', e => 
+e.target.style.color = 'hotpink')
+
 //POST input ci
 
 function addNewPlayer(playerObj){
@@ -89,6 +98,14 @@ function playerCard(players) {
     btn.textContent = 'add goal'
     btn.id = 'player-select'
     btn.addEventListener('click', ()=>increaseGoals(players))
+    btn.addEventListener('mouseover', (e) => {
+        e.target.style.color = "blue"
+        
+        })
+    btn.addEventListener('mouseout', (e) => {
+        e.target.style.color = "black"
+            
+        })
     //div.appendChild(btn)
 
     playerList.append(div);
@@ -97,6 +114,11 @@ function playerCard(players) {
 }
 score = document.querySelector('#scoresheet')
 console.log(score)
+
+//mouseover/out 
+
+
+
 
 function teamStatistics(results){
     const teamDiv = document.createElement('div')
@@ -121,7 +143,7 @@ function fetchScores () {
     .then(response => response.json())
     .then(score => {
         console.log(score)
-        score.fixtures.forEach(teamStatistics)
+        (teamStatistics(score.fixtures[0]))
     })}
 
 
