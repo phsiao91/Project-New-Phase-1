@@ -28,6 +28,15 @@ addNewPlayer(playerObj)
 playerCard(playerObj)
 }
 
+// mouseover 
+document.querySelector('.submit').addEventListener('mouseover', (e) => {
+    e.target.style.color = "blue"
+    
+    })
+    
+document.querySelector('.submit').addEventListener('mouseout', e => 
+    e.target.style.color = 'hotpink')
+
 //POST input ci
 
 function addNewPlayer(playerObj){
@@ -92,6 +101,14 @@ function playerCard(players) {
     btn.id = 'player-select'
     btn.style.fontSize = 'large'
     btn.addEventListener('click', ()=>increaseGoals(players))
+    btn.addEventListener('mouseover', (e) => {
+        e.target.style.color = "blue"
+        
+        })
+    btn.addEventListener('mouseout', (e) => {
+        e.target.style.color = "black"
+            
+        })
     //div.appendChild(btn)
 
     playerList.append(div);
