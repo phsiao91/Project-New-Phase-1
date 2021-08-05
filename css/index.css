@@ -104,10 +104,14 @@ body {
   text-align: left;
   border: grey solid 1px;
   padding: 1rem;
-  width: 15rem;
-  height: 25rem;
+  width: 30rem;
+  height: 35rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px rgb(56, 55, 73);
-  background-color: rgb(238, 144, 233);
+  background-color: rgb(144, 211, 238);
+}
+
+.score-heading {
+  font-size: small;
 }

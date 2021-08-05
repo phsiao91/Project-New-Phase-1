@@ -105,25 +105,48 @@ function teamStatistics(results){
 
     const homeScore = document.createElement('p')
     homeScore.textContent = `FLatiron United: ${results.team_h}`;
-
+    
+    const vs = document.createElement('p')
+    vs.textContent = 'VS'
+    vs.style.color = 'hotpink'
     const awayScore = document.createElement('p')
-    awayScore.textContent = `App Academy: ${results.team_a}`
+    awayScore.textContent = `App Academy FC: ${results.team_a}`
 
     const gameTime = document.createElement('p')
-    gameTime.textContent = results.kickoff_time
+    gameTime.textContent = `Kick-off ${results.kickoff_time}`
+    gameTime.style.color = 'chocolate'
 
-    score.append(teamDiv);
-    teamDiv.append(homeScore, awayScore, gameTime);
+    score.appendChild(teamDiv);
+    teamDiv.append(homeScore, vs, awayScore, gameTime);
 }
 
 function fetchScores () {
+    
+
     fetch ('https://fantasy.premierleague.com/api/element-summary/4/')
     .then(response => response.json())
-    .then(score => {
-        console.log(score)
-        score.fixtures.forEach(teamStatistics)
-    })}
+    
+        .then(score => {
+            // for(let i = 0; i < 4; i++){
+                //teamStatistics(score.fixtures[i])
+            console.log(score)
+            const newScore = score.fixtures.slice(0,4)
+            newScore.forEach(teamStatistics)
+        })}
+     // .then(score => {
+        // console.log(score)
+        //     teamStatistics(score.fixtures[0])
+        //     teamStatistics(score.fixtures[1])
+    // })}
 
+    // function scoreFilter (collection) {
+    //     for (const user of collection) {
+    //       if (score. === 'Blue') {
+    //         console.log(user.firstName);
+    //       }
+    //     }
+    //   }
+      
 
 function increaseGoals(players) {
     const goalsNumber = event.target.previousElementSibling; //typo 'previos'
