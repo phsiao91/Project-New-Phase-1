@@ -3,13 +3,7 @@ const database = []
 document.addEventListener('click', function(e) {
     console.log(e.target)
 })
-const h1 = document.querySelector('h1')
-h1.textContent = 'Create Your Team'
 
-// const topDisplay = document.createElement('img')
-// topDisplay.id = 'banner'
-// topDisplay.src = 'https://gameonfw.com/wp-content/uploads/2016/04/game-on-soccer-banner.jpg'
-// h1.append(topDisplay)
 
 // Submit Handler (Form) ci
 
@@ -52,13 +46,6 @@ function addNewPlayer(playerObj){
     
     
 }
-// function getPlayers() {
-//     fetch(' http://localhost:3000/players')
-//     .then(res => res.json())
-//     .then(players => {
-//         console.log(players)
-//         players.forEach(playerCard)
-// })}
 
 function getPlayers() {
     fetch('http://localhost:3000/players')
@@ -102,21 +89,56 @@ function playerCard(players) {
     btn.style.fontSize = 'large'
     btn.addEventListener('click', ()=>increaseGoals(players))
     btn.addEventListener('mouseover', (e) => {
-        e.target.style.color = "blue"
+        e.target.style.color = "hotpink"
         
         })
     btn.addEventListener('mouseout', (e) => {
         e.target.style.color = "black"
             
         })
+    const lineSpace = document.createElement('p')
+    lineSpace.textContent = ''
+    
+    const secondDiv = document.createElement('div')
+    secondDiv.className = 'actions'
+    
+    const removePlayer = document.createElement('button');
+    removePlayer.className = 'remove'
+    removePlayer.textContent = 'Remove'
+    removePlayer.style.fontSize = 'large'
+    removePlayer.addEventListener('click', () => deletePlayer(players.id))
     //div.appendChild(btn)
 
     playerList.append(div);
-    div.append(playerName, img, numberOfGoals, btn); //switched to append 
-    console.log(playerList)
+    div.append(playerName, img, numberOfGoals, btn, secondDiv); //switched to append 
+    secondDiv.append(lineSpace, removePlayer)
+    //console.log(playerList)
 }
+
+function increaseGoals(players) {
+    const goalsNumber = event.target.previousElementSibling; //typo 'previos'
+    console.log(goalsNumber)
+    const goals = parseInt(++players.goals)
+    fetch(`http://localhost:3000/players/${players.id}`, {
+        method:'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({goals: goals})
+    })
+    .then(res => res.json())
+    .then(data => goalsNumber.textContent = `${data.goals} goals scored`)
+}
+
 score = document.querySelector('#scoresheet')
 console.log(score)
+
+function deletePlayer(id) {
+    fetch(`http://localhost:3000/players/${id}` ,{
+        method: 'DELETE'})
+    .then(res => res.json())
+    .then(() => document.getElementById(`${id}`).remove())
+    }
 
 function teamStatistics(results){
     const teamDiv = document.createElement('div')
@@ -153,35 +175,7 @@ function fetchScores () {
             const newScore = score.fixtures.slice(0,4)
             newScore.forEach(teamStatistics)
         })}
-     // .then(score => {
-        // console.log(score)
-        //     teamStatistics(score.fixtures[0])
-        //     teamStatistics(score.fixtures[1])
-    // })}
-
-    // function scoreFilter (collection) {
-    //     for (const user of collection) {
-    //       if (score. === 'Blue') {
-    //         console.log(user.firstName);
-    //       }
-    //     }
-    //   }
-      
-
-function increaseGoals(players) {
-    const goalsNumber = event.target.previousElementSibling; //typo 'previos'
-    console.log(goalsNumber)
-    const goals = parseInt(++players.goals)
-    fetch(`http://localhost:3000/players/${players.id}`, {
-        method:'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({goals: goals})
-    })
-    .then(res => res.json())
-    .then(data => goalsNumber.textContent = `${data.goals} goals scored`)
-}
+        
 
 const init = function() {
     getPlayers()

@@ -129,3 +129,30 @@ body {
   top: 8px;
   left: 16px;
 }
+
+.remove {
+  background-color: darkred;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.remove:hover {
+  background-color: yellow;
+  color: red;
+}
+
+.season-stats {
+  background-color: lightblue;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.season-stats:hover {
+  background-color: seagreen;
+}

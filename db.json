@@ -1,52 +1,52 @@
 {
   "players": [
     {
-      "id": 1,
-      "name": "Luka Modric",
-      "image": "http://3.bp.blogspot.com/-eOcllUbzhPk/TedLJY_IQtI/AAAAAAAACYE/jZEzHsvwBkc/s1600/Manchester+United+transfer+bid+luka+modric.jpg",
-      "goals": 7
-    },
-    {
       "id": 2,
       "name": "Toni Kroos",
       "image": "https://i2-prod.football.london/incoming/article20542885.ece/ALTERNATES/s1200c/0_Kroos.jpg",
-      "goals": 6
+      "goals": 11
     },
     {
       "id": 3,
       "name": "Bruno Fernandez",
       "image": "https://cdn-wp.thesportsrush.com/2020/08/0_Bruno-Fernandes.jpg",
-      "goals": 5
-    },
-    {
-      "name": "Marcus Rashford",
-      "image": "https://www.irishtimes.com/polopoly_fs/1.4243834.1588439586!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
-      "goals": 11,
-      "id": 4
+      "goals": 7
     },
     {
       "id": 5,
       "name": "Zlatan Ibrahimovich",
       "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article20657964.ece/ALTERNATES/s1200c/0_GettyImages-642912838.jpg",
-      "goals": 12
+      "goals": 13
     },
     {
       "id": 6,
       "name": "Christiano Ronaldo",
       "image": "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgxODI4NTcyNzM2OTIyNzU1/cristiano-ronaldo-international-goal-record.jpg",
-      "goals": 18
+      "goals": 19
     },
     {
       "id": 7,
       "name": "Sergio Ramos",
       "image": "https://s.hs-data.com/bilder/spieler/gross/19198.jpg",
-      "goals": 1
+      "goals": 2
     },
     {
       "id": 8,
       "name": "Marcelo",
       "image": "https://bolavip.com/__export/1621447533376/sites/bolavip/img/2021/05/19/marcelo.jpg_1159711837.jpg",
-      "goals": 2
+      "goals": 3
+    },
+    {
+      "name": "Luka Modric",
+      "image": "https://www3.pictures.zimbio.com/gi/Real+Madrid+v+Borussia+Dortmund+UEFA+Champions+Cco8NeXpT3Tx.jpg",
+      "goals": 6,
+      "id": 10
+    },
+    {
+      "name": "Marcus Rashford",
+      "image": "https://www.irishtimes.com/polopoly_fs/1.4243834.1588439586!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
+      "goals": 3,
+      "id": 11
     }
   ]
 }
